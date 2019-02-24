@@ -1,0 +1,2416 @@
+
+
+
+    
+
+    
+
+        Remove HTML Tags in Javascript with Regex - Stack Overflow
+        
+        
+        
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+
+    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+
+            StackExchange.ready(function () {
+                                    
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.initSnippetRenderer();
+                    });
+                    
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:0,shownCommentCount:0,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:1499889});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('1', '1499889');
+                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text'); });
+
+            });
+        
+
+        
+        
+        
+        
+        
+        
+
+
+        
+        StackExchange.init({"locale":"en","serverTime":1550997270,"routeName":"Questions/Show","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"childUrl":"https://meta.stackoverflow.com","enableSocialMediaInSharePopup":true,"protocol":"https"},"user":{"fkey":"80d79e56885de19f2c26f2bed955f68debb2ccc0de98d56c27276e798fa31049","tid":"3ca043c8-2a34-ccf3-e841-98cefffad0c2","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true,"ab":{"inline_signup_hero":{"v":"d","g":1}}},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}},"story":{"minCompleteBodyLength":75,"likedTagsMaxLength":300,"dislikedTagsMaxLength":300},"jobPreferences":{"maxNumDeveloperRoles":2,"maxNumIndustries":4},"svgIconPath":"https://cdn.sstatic.net/Img/svg-icons","svgIconHash":"840d669a9425"}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true,"enableImgurHttps":true,"forceHttpsImages":true},"userMessaging":{},"comments":{},"userProfile":{"openGraphAPIKey":"58740831ad23540e00c58987"},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"snippets":{"snippetsEnabled":true,"renderDomain":"stacksnippets.net"},"paths":{},"markdown":{"asteriskIntraWordEmphasis":true},"monitoring":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"mentions":{"maxNumUsersInDropdown":50},"slack":{"sidebarAdDismissCookie":"slack-sidebar-ad"}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"e7437647f3e1","js/moderator.en.js":"619f4a15a66c","js/full-anon.en.js":"23731d9d9e18","js/full.en.js":"0b92bece1645","js/wmd.en.js":"91902fe19f1c","js/mobile.en.js":"3c875c8be40f","js/help.en.js":"8179f44b2f78","js/tageditor.en.js":"55691370f99b","js/tageditornew.en.js":"1e8587d85d71","js/inline-tag-editing.en.js":"eec155f1c3d1","js/revisions.en.js":"7c33989afe1c","js/review.en.js":"a7b779234fe3","js/tagsuggestions.en.js":"ddb0e41afe26","js/post-validation.en.js":"43821ab9802b","js/explore-qlist.en.js":"222b04ca33bc","js/events.en.js":"8bd9be94ddf2","js/keyboard-shortcuts.en.js":"e36f95e0182e","js/external-editor.en.js":"b4fb92d89f4e","js/adops.en.js":"22a9bd59b1e9","js/begin-edit-event.en.js":"a03fb3ec532c","js/stacks-polyfills.en.js":"04a27ea437d9","js/external-editor.en.js":"b4fb92d89f4e","js/snippet-javascript.en.js":"81167b8c9d5d","js/snippet-javascript-codemirror.en.js":"3f5fb48ce19e"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    
+    body,.top-bar{margin-top:1.9em}
+    
+        
+    
+    
+
+
+
+
+
+    
+        
+                
+                                
+                        Stack Overflow
+                    
+
+
+
+        
+
+            
+                    
+                        
+                        
+                    
+            
+
+        
+
+
+
+
+
+
+        
+            
+        
+            
+            
+        
+    
+    
+        
+            
+            
+        
+    
+
+    
+        
+    
+
+    
+        
+            
+        
+    
+
+            
+                        Log In
+                        Sign Up
+
+            
+
+    
+
+
+    
+        
+            current community
+            
+        
+        
+            
+                    
+                            
+            
+        
+        
+            Stack Overflow
+        
+    
+
+    
+    
+            help
+                    chat
+            
+
+                    
+                    
+                            
+        
+    
+
+                            
+        
+        
+            Meta Stack Overflow
+        
+    
+
+                    
+            
+        
+
+        
+            
+your communities            
+
+        
+        
+
+                
+Sign up or log in to customize your list.
+                
+        
+
+        
+            more stack exchange communities
+            
+            company blog
+        
+        
+                
+                
+    
+            
+        
+            
+                                    
+                        
+                            Tour
+                            
+                                Start here for a quick overview of the site
+                            
+                        
+                    
+                
+                    
+                        Help Center
+                        
+                            Detailed answers to any questions you might have
+                        
+                    
+                
+                        
+                            
+                                Meta
+                                
+                                    Discuss the workings and policies of this site
+                                
+                            
+                        
+                        
+                            
+                                About Us
+                                
+                                    Learn more about Stack Overflow the company
+                                
+                            
+                        
+                        
+                            
+                                Business
+                                
+                                    Learn more about hiring developers or posting ads with us
+                                
+                            
+                        
+            
+        
+    
+                    
+                
+            
+    
+
+
+    
+
+    
+        
+            
+                
+                    By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+                
+            
+            
+                
+            
+        
+    
+
+    
+        StackExchange.ready(function () { StackExchange.topbar.init({ observeSize: true }); });
+        StackExchange.scrollPadding.setPaddingTop(50, 10);     
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+    
+            
+                
+                        
+        
+Home        
+    
+
+                    
+                        
+                                Public
+                                
+        
+                Stack Overflow
+        
+    
+
+    
+        
+Tags        
+    
+    
+        
+Users        
+    
+    
+        
+Jobs        
+    
+                                                    
+                    
+                        
+                            
+                                        
+                                            Teams
+                                        
+                                        
+                                            
+                                                
+                                                Create Team
+                                            
+
+
+
+
+    
+    Q&amp;A for work. A dedicated place to share your team’s knowledge.
+
+
+    StackExchange.ready(function () {
+        StackExchange.Notice.tooltipInit();
+    });
+
+                                        
+                            
+                        
+                
+            
+    
+
+
+        
+
+
+            
+
+
+
+    
+
+    
+    
+    
+
+.everyoneloves__top-leaderboard:empty,.everyoneloves__mid-leaderboard:empty,.everyoneloves__bot-mid-leaderboard:empty{                height:90px;width:728px;box-sizing:border-box;
+}
+                    
+                    Remove HTML Tags in Javascript with Regex
+
+            
+
+        
+            Ask Question
+        
+
+
+        
+            
+
+            
+
+
+
+    
+    
+            
+                
+
+
+        
+        94
+        
+
+        
+            
+            29
+        
+
+
+
+
+            
+
+            
+
+    
+    
+
+I am trying to remove all the html tags out of a string in Javascript.
+Heres what I have... I can't figure out why its not working....any know what I am doing wrong?
+
+&lt;script type="text/javascript"&gt;
+
+var regex = "/&lt;(.|\n)*?&gt;/";
+var body = "&lt;p&gt;test&lt;/p&gt;";
+var result = body.replace(regex, "");
+alert(result);
+
+&lt;/script&gt;
+
+
+Thanks a lot!
+    
+
+        
+            
+                javascript regex 
+            
+        
+
+    
+        
+            
+share|improve this question
+            
+
+                
+
+    
+        edited Sep 30 '09 at 22:04
+    
+    
+        
+    
+    
+        Alan Moore
+        
+            61.2k979133
+        
+    
+                
+            
+
+    
+        asked Sep 30 '09 at 18:31
+    
+    
+        
+    
+    
+        GabeGabe
+        
+            39.3k22128170
+        
+    
+
+
+            
+        
+    
+    
+
+                
+    
+	    
+            
+
+            
+	    
+
+        
+
+                add a comment&nbsp;|&nbsp;
+            
+                 
+            
+
+
+
+
+            
+
+                
+                
+                    
+                        
+                                10 Answers
+                            10
+                        
+                        
+                            
+
+        
+            active
+        
+            oldest
+        
+            votes
+    
+
+                        
+                    
+                
+
+
+
+
+  
+
+
+    
+            
+                
+
+
+        
+        203
+        
+
+
+                
+
+
+
+            
+            
+
+
+    
+    
+Try this, noting that the grammar of HTML is too complex for regular expressions to be correct 100% of the time:
+
+var regex = /(&lt;([^&gt;]+)&gt;)/ig
+,   body = "&lt;p&gt;test&lt;/p&gt;"
+,   result = body.replace(regex, "");
+
+console.log(result);
+
+
+If you're willing to use a library such as jQuery, you could simply do this:
+
+console.log($('&lt;p&gt;test&lt;/p&gt;').text());
+
+    
+    
+        
+    
+share|improve this answer                    
+    
+
+    
+        edited Jul 25 '13 at 20:35
+    
+    
+        
+    
+    
+        
+        
+            
+        
+    
+    
+            
+
+
+    
+
+    
+        answered Sep 30 '09 at 18:36
+    
+    
+        
+    
+    
+        karim79karim79
+        
+            297k55380388
+        
+    
+
+
+    
+    
+    
+
+
+    
+    
+	    
+            
+
+
+    
+        
+            
+                    3
+            
+                    
+        
+            
+                
+                AWESOME, I didnt think about the jQuery option. That is way preferred! Thanks so much!
+                
+                    &ndash;&nbsp;Gabe
+                Sep 30 '09 at 18:40
+                                                            
+        
+    
+    
+        
+            
+                    2
+            
+                    
+        
+            
+                
+                Why are you wrapping the regex in a string?  	var regex = /(&lt;([^&gt;]+)&gt;)/ig;
+                
+                    &ndash;&nbsp;brianary
+                Sep 30 '09 at 18:42
+                                                            
+        
+    
+    
+        
+            
+                    4
+            
+                    
+        
+            
+                
+                This is an old question but I&#39;ll just post this here: jsperf.com/regex-replace-vs-jquery-text
+                
+                    &ndash;&nbsp;Joshua
+                May 8 '13 at 16:21
+                                                            
+        
+    
+    
+        
+            
+                    4
+            
+                    
+        
+            
+                
+                +1 for answering the question as asked and giving the alternate, easier solution.
+                
+                    &ndash;&nbsp;Dave
+                Jul 23 '13 at 13:18
+                                                            
+        
+    
+    
+        
+            
+                    2
+            
+                    
+        
+            
+                
+                Try running this on &quot;&lt;img src=bogus onerror=alert(1337)&quot;.  The first fails because the HTML parser doesn&#39;t require that the last tag be closed by a &gt;, and the second fails because image loading starts even before a parsed DOM tree is added to the DOM, and $(&#39;&lt;img ...&gt;&#39;) invokes the HTML parser.
+                
+                    &ndash;&nbsp;Mike Samuel
+                Nov 1 '13 at 3:21
+                                                            
+        
+    
+            
+	    
+
+        
+
+                &nbsp;|&nbsp;
+            show 5 more comments
+                 
+        
+
+
+  
+
+
+    
+            
+                
+
+
+        
+        27
+        
+
+
+                
+
+
+
+            
+            
+
+
+    
+    
+This is an old question, but I stumbled across it and thought I'd share the method I used:
+
+var body = '&lt;div id="anid"&gt;some &lt;a href="link"&gt;text&lt;/a&gt;&lt;/div&gt; and some more text';
+var temp = document.createElement("div");
+temp.innerHTML = body;
+var sanitized = temp.textContent || temp.innerText;
+
+
+sanitized will now contain: "some text and some more text"
+
+Simple, no jQuery needed, and it shouldnt let you down even in more complex cases :)
+
+James
+    
+    
+        
+    
+share|improve this answer                    
+    
+
+    
+        edited Oct 17 '12 at 20:50
+    
+    
+        
+    
+    
+        
+        
+            
+        
+    
+    
+            
+
+
+    
+
+    
+        answered Oct 17 '12 at 20:42
+    
+    
+        
+    
+    
+        jsdwjsdw
+        
+            3,14821824
+        
+    
+
+
+    
+    
+    
+
+
+    
+    
+	    
+            
+
+
+    
+        
+            
+            
+                    
+        
+            
+                
+                @lytnus: brilliant!!! How does it work?
+                
+                    &ndash;&nbsp;Ho&#224;ng Long
+                Feb 20 '13 at 4:10
+                                                            
+        
+    
+    
+        
+            
+            
+                    
+        
+            
+                
+                Hiya. Well, basically all it does is create a new DIV, set the inner HTML content to whatever is provided (which I assume means any HTML code is parsed), and then asks for all of the text content of the div, which ignores said HTML.
+                
+                    &ndash;&nbsp;jsdw
+                Mar 14 '13 at 19:05
+                                                            
+        
+    
+    
+        
+            
+            
+                    
+        
+            
+                
+                in my browser the object doesn&#39;t have field innerText
+                
+                    &ndash;&nbsp;Adrian
+                Apr 19 '13 at 2:23
+                                                            
+        
+    
+    
+        
+            
+            
+                    
+        
+            
+                
+                @Adrian the last line will select the output of temp.textContent if it exists, and only try temp.innerText if it does not. Your browser should have the former, but for browsers that do not, the latter is used instead :)
+                
+                    &ndash;&nbsp;jsdw
+                Apr 20 '13 at 10:09
+                                                            
+        
+    
+    
+        
+            
+            
+                    
+        
+            
+                
+                After looking into this again (there are so many answers out there). I am using this method.  This is the same method used in text-angular. They have added a couple of extras which I have included in this thread
+                
+                    &ndash;&nbsp;Rentering.com
+                Mar 29 '17 at 21:21
+                        
+                            
+                        
+                                                            
+        
+    
+            
+	    
+
+        
+
+                add a comment&nbsp;|&nbsp;
+            
+                 
+        
+
+
+  
+
+
+    
+            
+                
+
+
+        
+        7
+        
+
+
+                
+
+
+
+            
+            
+
+
+    
+    
+This worked for me.
+
+   var regex = /(&amp;nbsp;|&lt;([^&gt;]+)&gt;)/ig
+      ,   body = tt
+     ,   result = body.replace(regex, "");
+       alert(result);
+
+    
+    
+        
+    
+share|improve this answer                    
+            
+
+
+    
+
+    
+        answered Sep 17 '14 at 8:39
+    
+    
+        
+    
+    
+        d689pd689p
+        
+            469815
+        
+    
+
+
+    
+    
+    
+
+
+    
+    
+	    
+            
+
+
+    
+        
+            
+                    4
+            
+                    
+        
+            
+                
+                +1 thanks.  this one liner woked perfect for my needs. console.log( my_html.replace(&#47;(&amp;nbsp;|&lt;([^&gt;]+)&gt;)&#47;ig, &quot;&quot;) );
+                
+                    &ndash;&nbsp;DaveAlger
+                May 3 '15 at 0:29
+                                                            
+        
+    
+            
+	    
+
+        
+
+                add a comment&nbsp;|&nbsp;
+            
+                 
+        
+
+
+  
+
+
+    
+            
+                
+
+
+        
+        3
+        
+
+
+                
+
+
+
+            
+            
+
+
+    
+    
+Here is how TextAngular (WYSISYG Editor) is doing it. I also found this to be the most consistent answer, which is NO REGEX.
+
+@license textAngular
+Author : Austin Anderson
+License : 2013 MIT
+Version 1.5.16
+// turn html into pure text that shows visiblity
+function stripHtmlToText(html)
+{
+    var tmp = document.createElement("DIV");
+    tmp.innerHTML = html;
+    var res = tmp.textContent || tmp.innerText || '';
+    res.replace('\u200B', ''); // zero width space
+    res = res.trim();
+    return res;
+}
+
+    
+    
+        
+    
+share|improve this answer                    
+            
+
+
+    
+
+    
+        answered Mar 29 '17 at 21:24
+    
+    
+        
+    
+    
+        Rentering.comRentering.com
+        
+            31129
+        
+    
+
+
+    
+    
+    
+
+
+    
+    
+	    
+            
+
+            
+	    
+
+        
+
+                add a comment&nbsp;|&nbsp;
+            
+                 
+        
+
+
+  
+
+
+    
+            
+                
+
+
+        
+        2
+        
+
+
+                
+
+
+
+            
+            
+
+
+    
+    
+my simple JavaScript library called FuncJS has a function called "strip_tags()" which does the task for you — without requiring you to enter any regular expressions.
+
+For example, say that you want to remove tags from a sentence - with this function, you can do it simply like this:
+
+strip_tags("This string &lt;em&gt;contains&lt;/em&gt; &lt;strong&gt;a lot&lt;/strong&gt; of tags!");
+
+
+This will produce "This string contains a lot of tags!".
+
+For a better understanding, please do read the documentation at
+GitHub FuncJS.
+
+Additionally, if you'd like, please provide some feedback through the form. It would be very helpful to me!
+    
+    
+        
+    
+share|improve this answer                    
+    
+
+    
+        edited Jun 17 '16 at 6:36
+    
+    
+        
+    
+    
+        Divyesh Kanzariya
+        
+            2,05722629
+        
+    
+    
+            
+
+
+    
+
+    
+        answered Nov 23 '12 at 23:22
+    
+    
+        
+    
+    
+        Sharikul IslamSharikul Islam
+        
+            17618
+        
+    
+
+
+    
+    
+    
+
+
+    
+    
+	    
+            
+
+
+    
+        
+            
+            
+                    
+        
+            
+                
+                Could you perhaps provide what strip_tags() does instead of just promoting your library and not explaining it? The link explains the API usage but not what it does.
+                
+                    &ndash;&nbsp;Justin Beaudry
+                Nov 1 '13 at 0:50
+                        
+                            
+                        
+                                                            
+        
+    
+    
+        
+            
+                    1
+            
+                    
+        
+            
+                
+                well, found it on that website he gave, strip_tags = function(e) { var _hasTag, _tag_string; if (!(e === void 0 || e === null || e === &quot;&quot;)) { _tag_string = e; if (typeof _tag_string === &quot;object&quot;) { _tag_string = _tag_string.outerHTML; } _hasTag = _tag_string.match(&#47;(&lt;([^&gt;]+)&gt;)&#47;ig); if (_hasTag) { return trim(_tag_string.replace(&#47;(&lt;([^&gt;]+)&gt;)&#47;ig, &#39;&#39;)); } else { return trim(_tag_string); } } else { throw new Error(&quot;The &#39;strip_tags&#39; function expects one argument in the form of a string or object.&quot;); } };
+                
+                    &ndash;&nbsp;Predrag Stojadinović
+                Feb 18 '15 at 13:48
+                        
+                            
+                        
+                                                            
+        
+    
+            
+	    
+
+        
+
+                add a comment&nbsp;|&nbsp;
+            
+                 
+        
+
+
+  
+
+
+    
+            
+                
+
+
+        
+        1
+        
+
+
+                
+
+
+
+            
+            
+
+
+    
+    
+you can use a powerful library for management String which is undrescore.string.js 
+
+_('a &lt;a href="#"&gt;link&lt;/a&gt;').stripTags()
+
+
+=> 'a link'
+
+_('a &lt;a href="#"&gt;link&lt;/a&gt;&lt;script&gt;alert("hello world!")&lt;/script&gt;').stripTags()
+
+
+=> 'a linkalert("hello world!")'
+
+Don't forget to import this lib as following : 
+
+        &lt;script src="underscore.js" type="text/javascript"&gt;&lt;/script&gt;
+        &lt;script src="underscore.string.js" type="text/javascript"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript"&gt; _.mixin(_.str.exports())&lt;/script&gt;
+
+    
+    
+        
+    
+share|improve this answer                    
+            
+
+
+    
+
+    
+        answered Mar 28 '13 at 16:13
+    
+    
+        
+    
+    
+        Abdennour TOUMIAbdennour TOUMI
+        
+            34.3k15142160
+        
+    
+
+
+    
+    
+    
+
+
+    
+    
+	    
+            
+
+
+    
+        
+            
+                    2
+            
+                    
+        
+            
+                
+                I looked at the source, and they actually use the same regex suggested in other answer internally.
+                
+                    &ndash;&nbsp;eugene
+                Mar 19 '14 at 5:24
+                                                            
+        
+    
+            
+	    
+
+        
+
+                add a comment&nbsp;|&nbsp;
+            
+                 
+        
+
+
+  
+
+
+    
+            
+                
+
+
+        
+        0
+        
+
+
+                
+
+
+
+            
+            
+
+
+    
+    
+For a proper HTML sanitizer in JS, see http://code.google.com/p/google-caja/wiki/JsHtmlSanitizer
+    
+    
+        
+    
+share|improve this answer                    
+            
+
+
+    
+
+    
+        answered Oct 1 '09 at 0:02
+    
+    
+        
+    
+    
+        Mike SamuelMike Samuel
+        
+            93.5k23171214
+        
+    
+
+
+    
+    
+    
+
+
+    
+    
+	    
+            
+
+
+    
+        
+            
+            
+                    
+        
+            
+                
+                @Justin, What are you talking about?  The last change submitted was 4 hours ago.
+                
+                    &ndash;&nbsp;Mike Samuel
+                Nov 1 '13 at 3:18
+                                                            
+        
+    
+            
+	    
+
+        
+
+                add a comment&nbsp;|&nbsp;
+            
+                 
+        
+
+
+  
+
+
+    
+            
+                
+
+
+        
+        0
+        
+
+
+                
+
+
+
+            
+            
+
+
+    
+    
+&lt;html&gt;
+&lt;head&gt;
+&lt;script type="text/javascript"&gt;
+function striptag(){
+var html = /(&lt;([^&gt;]+)&gt;)/gi;
+for (i=0; i &lt; arguments.length; i++)
+arguments[i].value=arguments[i].value.replace(html, "")
+}
+&lt;/script&gt;
+&lt;/head&gt; 
+&lt;body&gt;
+       &lt;form name="myform"&gt;
+&lt;textarea class="comment" title="comment" name=comment rows=4 cols=40&gt;&lt;/textarea&gt;&lt;br&gt;
+&lt;input type="button" value="Remove HTML Tags" onClick="striptag(this.form.comment)"&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+    
+    
+        
+    
+share|improve this answer                    
+            
+
+
+    
+
+    
+        answered Aug 2 '14 at 8:20
+    
+    
+        
+    
+    
+        Surya R PraveenSurya R Praveen
+        
+            1,4441213
+        
+    
+
+
+    
+    
+    
+
+
+    
+    
+	    
+            
+
+            
+	    
+
+        
+
+                add a comment&nbsp;|&nbsp;
+            
+                 
+        
+
+
+  
+
+
+    
+            
+                
+
+
+        
+        0
+        
+
+
+                
+
+
+
+            
+            
+
+
+    
+    
+The selected answer doesn't always ensure that HTML is stripped, as it's still possible to construct an invalid HTML string through it by crafting a string like the following.
+
+  "&lt;&lt;h1&gt;h1&gt;foo&lt;&lt;//&lt;/h1&gt;h1/&gt;"
+
+
+This input will ensure that the stripping assembles a set of tags for you and will result in:
+
+  "&lt;h1&gt;foo&lt;/h1&gt;"
+
+
+additionally jquery's text function will strip text not surrounded by tags.
+
+Here's a function that uses jQuery but should be more robust against both of these cases:
+
+var stripHTML = function(s) {
+    var lastString;
+
+    do {            
+        s = $('&lt;div&gt;').html(lastString = s).text();
+    } while(lastString !== s) 
+
+    return s;
+};
+
+    
+    
+        
+    
+share|improve this answer                    
+    
+
+    
+        edited Jul 1 '15 at 8:17
+    
+    
+        
+    
+    
+        Community&#9830;
+        
+            11
+        
+    
+    
+            
+
+
+    
+
+    
+        answered Apr 4 '13 at 15:31
+    
+    
+        
+    
+    
+        Rick MoynihanRick Moynihan
+        
+            446310
+        
+    
+
+
+    
+    
+    
+
+
+    
+    
+	    
+            
+
+            
+	    
+
+        
+
+                add a comment&nbsp;|&nbsp;
+            
+                 
+        
+
+
+  
+
+
+    
+            
+                
+
+
+        
+        -1
+        
+
+
+                
+
+
+
+            
+            
+
+
+    
+    
+Like others have stated, regex will not work. Take a moment to read my article about why you cannot and should not try to parse html with regex, which is what you're doing when you're attempting to strip html from  your source string. 
+    
+    
+        
+    
+share|improve this answer                    
+            
+
+
+    
+
+    
+        answered Mar 17 '17 at 15:28
+    
+    
+        
+    
+    
+        ColeCole
+        
+            8910
+        
+    
+
+
+    
+    
+    
+
+
+    
+    
+	    
+            
+
+            
+	    
+
+        
+
+                add a comment&nbsp;|&nbsp;
+            
+                 
+        
+
+                                    
+                        
+                            
+                            
+                            
+                            Your Answer
+
+
+
+            
+            StackExchange.ifUsing("editor", function () {
+                StackExchange.using("externalEditor", function () {
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.init();
+                    });
+                });
+            }, "code-snippets");
+        
+    
+
+
+    StackExchange.ready(function() {
+        var channelOptions = {
+            tags: "".split(" "),
+            id: "1"
+        };
+        initTagRenderer("".split(" "), "".split(" "), channelOptions);
+       
+        StackExchange.using("externalEditor", function() {
+                // Have to fire editor after snippets, if snippets enabled
+                if (StackExchange.settings.snippets.snippetsEnabled) {
+                    StackExchange.using("snippets", function() {
+                        createEditor();
+                    });
+                }
+                else {
+                    createEditor();
+                }
+            });
+
+            function createEditor() {
+                StackExchange.prepareEditor({
+                    heartbeatType: 'answer',
+                    autoActivateHeartbeat: false,
+                    convertImagesToLinks: true,
+                noModals: true,
+                showLowRepImageUploadWarning: true,
+                reputationToPostImages: 10,
+                bindNavPrevention: true,
+                postfix: "",
+                imageUploader: {
+                    brandingHtml: "Powered by \u003ca class=\"icon-imgur-white\" href=\"https://imgur.com/\"\u003e\u003c/a\u003e",
+                    contentPolicyHtml: "User contributions licensed under \u003ca href=\"https://creativecommons.org/licenses/by-sa/3.0/\"\u003ecc by-sa 3.0 with attribution required\u003c/a\u003e \u003ca href=\"https://stackoverflow.com/legal/content-policy\"\u003e(content policy)\u003c/a\u003e",
+                    allowUrls: true
+                },
+                    onDemand: true,
+                    discardSelector: ".discard-answer"
+                    ,immediatelyShowMarkdownHelp:true
+                    });
+                
+
+        }
+    });
+
+
+
+
+
+     
+        
+            
+                        
+                
+                    
+                
+                
+            
+        
+    
+
+    
+    
+        Thanks for contributing an answer to Stack Overflow!Please be sure to answer the question. Provide details and share your research!But avoid …Asking for help, clarification, or responding to other answers.Making statements based on opinion; back them up with references or personal experience.To learn more, see our tips on writing great answers.
+    
+    
+        
+    
+
+
+
+    draft saved
+    draft discarded
+
+
+
+    
+    
+    
+        
+        
+    
+
+
+
+
+
+                            
+                                
+                                            
+                
+                    
+                        Sign up or log in
+                        
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        
+                        
+                             Sign up using Google
+                        
+                        
+                             Sign up using Facebook
+                        
+                        
+                             Sign up using Email and Password
+                        
+                    
+                    
+                    
+                    
+                    
+                                Post as a guest
+            
+                
+                    Name
+                    
+                        
+                    
+                
+            
+            
+                
+                    
+                        
+                            Email
+                            Required, but never shown
+                        
+                    
+                    
+                        
+                    
+                
+            
+
+                    
+                
+            
+            
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', 'https%3a%2f%2fstackoverflow.com%2fquestions%2f1499889%2fremove-html-tags-in-javascript-with-regex%23new-answer', 'question_page');
+                    }
+                );
+            
+            
+                        Post as a guest
+            
+                
+                    Name
+                    
+                        
+                    
+                
+            
+            
+                
+                    
+                        
+                            Email
+                            Required, but never shown
+                        
+                    
+                    
+                        
+                    
+                
+            
+
+            
+
+                            
+
+                                                            
+                                    
+Post Your Answer                                    
+                                    
+                                        Discard
+                                    
+                                        
+                                            By clicking &quot;Post Your Answer&quot;, you acknowledge that you have read our updated terms of service, privacy policy and cookie policy, and that your continued use of the website is subject to these policies.
+                                        
+                                
+                        
+
+
+
+                        
+Not the answer you&#39;re looking for?                            Browse other questions tagged javascript regex  or ask your own question.                        
+            
+        
+                
+                            
+                    
+                        
+                            
+                                asked
+                            
+                            
+                                
+                                    
+                                        9 years, 4 months ago
+                                    
+                                
+                            
+                        
+                        
+                            
+                                viewed
+                            
+
+                            
+                                
+                                    144,252 times
+                                
+                            
+                        
+                            
+                                
+                                    active
+                                
+                                
+                                    1 year, 11 months ago
+                                
+                            
+                    
+                
+            
+
+            
+;try{(function(a){function b(a){return'string'==typeof a?document.getElementById(a):a}function c(a){return a=b(a),!!a&&'none'===getComputedStyle(a).display}function d(a){return!c(a)}function e(a){return!!a}function f(a){return /^\s*$/.test(b(a).innerHTML)}function g(a){var b=a.style;b.height=b.maxHeight=b.minHeight='auto',b.display='none',[].forEach.call(a.children,g)}function h(a,b){var c;return function(){return a&&(c=a.call(b||this,arguments),a=null),c}}function i(a){var b=document.createElement('script');b.src=a,document.body.appendChild(b)}function j(a){return k([],a)}function k(a,b){return a.push=function(a){return b(),delete this.push,this.push(a)},a}function l(){try{return!new Function('return async()=>{};')}catch(a){return!0}}function m(){return'undefined'!=typeof googletag&&!!googletag.apiReady}function n(){m()||(googletag={cmd:j(A)})}function o(){var a=document.createElement('div');a.className='adsbox',a.id='clc-abd',a.style.position='absolute',a.style.pointerEvents='none',a.innerHTML='&nbsp;',document.body.appendChild(a)}function p(a){var b=a.serviceName,c=a.slot,d=a.lineItemId;try{var e=c.getSlotElementId(),f=[];e||f.push('id=0');var h=document.getElementById(e);if(!e||h?h.hasAttribute('data-clc-stalled')&&f.push('st=1'):f.push('el=0'),0!==f.length)return void B(f.join('&'));-1===x.dh.indexOf(d)?h.setAttribute('data-clc-prefilled','true'):g(h),h.setAttribute('data-clc-ready','true')}catch(a){var i=document.querySelector('#dfp-tsb, #dfp-isb, #clc-tsb');i&&i.setAttribute('data-clc-ready','true'),B('e=1')}}function q(){return Object.keys(F.ids)}function r(a){var b=F.ids[a],c=F.slots[b];'function'==typeof c&&(c=c(a));return{path:'/'+C+'/'+E+'/'+b+'/'+D,sizes:c,zone:b}}function s(a){return!(clc.collapse&&void 0!==clc.collapse[a])||!!clc.collapse[a]}function t(a,b){'dfp-isb'===a&&b.setTargeting('Sidebar',['Inline']),'dfp-tsb'===a&&b.setTargeting('Sidebar',['Right']);var c=r(a),d=c.path,e=c.sizes,f=c.zone,g=googletag.defineSlot(d,e,a);s(f)&&g.setCollapseEmptyDiv(!0,!0),g.addService(b),!1}function u(b){var c=a.dfp&&a.dfp.targeting||{};Object.keys(c).forEach(function(a){b.setTargeting(a,c[a])})}function v(a){var g=a.map(b).filter(e);return{eligible:g.filter(f).filter(d).map(function(a){return a.id}),ineligible:g.filter(c)}}function w(b){if(void 0===b&&(b=q()),!m())return n(),void googletag.cmd.push(function(){return w(b)});var c=v(b),d=c.eligible,e=c.ineligible;if(e.forEach(g),0!==d.length){o(),googletag.destroySlots();var f=googletag.pubads();f.enableSingleRequest(),a.sreEvent||(f.addEventListener('slotRenderEnded',p),a.sreEvent=!0),u(f),d.forEach(function(a){return t(a,f)}),googletag.enableServices(),d.forEach(function(a){googletag.display(a)})}}var x=function(a){for(var b=[],c=1;c            
+                var clc = clc || {};
+                clc.collapse = { sb: !0,'tag-sponsorship':!0,lb:!1,mlb:!1,smlb:!1,bmlb:!1,'mobile-below-question':!0};
+                clc.cmd = clc.cmd || [];
+                clc.cmd.push(function () { window.clc_request='Av-1LOUymtYIAAAAAPHiFgACAAAAAgAAAAASAAAAfGphdmFzY3JpcHR8cmVnZXh8AFPSUK11SVqk7ag'; clc.load(); });
+                                clc.dfp = clc.dfp || {};
+                clc.dfp.targeting = {Registered:['false'],'so-tag':['javascript','regex']};
+                
+                var googletag = googletag || {};
+                googletag.cmd = googletag.cmd || [];
+                googletag.cmd.push(function () { clc.dfp.load(); });
+            
+    
+        Visit chat
+    
+        
+
+
+
+    
+    // 
+    
+            
+	Linked
+	
+
+
+	
+		1
+	
+	Match and replace a string using JavaScript regex
+
+
+	
+		-2
+	
+	Strip tags from a string - HTML5
+
+
+	
+		1
+	
+	Why my regex is not working in react but working anywhere else (e.g. regex tester online)?
+
+
+	
+		7
+	
+	AjaxFileUpload SyntaxError: missing } in XML expression
+
+
+	
+		9
+	
+	Javascript .replace() not working
+
+
+	
+		4
+	
+	jQuery: parse HTML into text
+
+
+	
+		2
+	
+	How to remove HTML tags from rendered text
+
+
+	
+		2
+	
+	Full text based Search on Client Machine using Java Script
+
+
+	
+		1
+	
+	remove &lt;strong&gt; from text box
+
+
+	
+		-2
+	
+	How to select specific text between HTML tags with RegExp?
+					
+				see more linked questions…
+			
+	
+
+
+                
+                    Related
+                    
+                        3613How to validate an email address in JavaScript?7653How do JavaScript closures work?5360How do I remove a property from a JavaScript object?5672Which equals operator (== vs ===) should be used in JavaScript comparisons?1083How do you use a variable in a regular expression?4496How do I include a JavaScript file in another JavaScript file?3578How to replace all occurrences of a string in JavaScript7012What does &ldquo;use strict&rdquo; do in JavaScript, and what is the reasoning behind it?7435How to check whether a string contains a substring in JavaScript?6841How do I remove a particular element from an array in JavaScript?
+                    
+                
+
+
+    
+        
+            Hot Network Questions
+        
+    
+    
+            
+                
+                    How would an EMP effect spacesuits (and small-arms weapons)?
+                
+
+            
+            
+                
+                    Expression for &quot;unconsciously using words (or accents) used by a person you often talk with or listen to&quot;?
+                
+
+            
+            
+                
+                    Boss asked me to sign a resignation paper without a date on it along with my new contract
+                
+
+            
+            
+                
+                    Are all power cords made equal?
+                
+
+            
+            
+                
+                    Isn&#39;t a semicolon (&#39;;&#39;) needed after a function declaration in C++?
+                
+
+            
+            
+                
+                    Process substitution inside a subshell to set a variable
+                
+
+            
+            
+                
+                    Disk space full during insert, what happens?
+                
+
+            
+            
+                
+                    How can changes in personality/values of a person who turned into a vampire be explained?
+                
+
+            
+            
+                
+                    Was Opportunity&#39;s last message to Earth &quot;My battery is low and it&#39;s getting dark&quot;?
+                
+
+            
+            
+                
+                    What happens to the first ionization potential when a hydrogen-like atom captures a particle?
+                
+
+            
+            
+                
+                    Connecting to SMTP server from AWS Lambda
+                
+
+            
+            
+                
+                    How to know if I am a &#39;Real Developer&#39;
+                
+
+            
+            
+                
+                    If a 12 by 16 sheet of paper is folded on its diagonal, what is the area of the region of the overlap?
+                
+
+            
+            
+                
+                    Multiple null checks in Java 8
+                
+
+            
+            
+                
+                    How to regain lost focus?
+                
+
+            
+            
+                
+                    Is the percentage symbol a constant?
+                
+
+            
+            
+                
+                    How to wrap a figure in exam document?
+                
+
+            
+            
+                
+                    What is an explicit bijection in combinatorics?
+                
+
+            
+            
+                
+                    How to deal with an underperforming subordinate?
+                
+
+            
+            
+                
+                    What is formjacking?
+                
+
+            
+            
+                
+                    Probability X1 ≥ X2
+                
+
+            
+            
+                
+                    What is wrong with my use of &quot;find -print0&quot;?
+                
+
+            
+            
+                
+                    Using Ansible, how can I take actions on each file in a specific location?
+                
+
+            
+            
+                
+                    Is layered encryption more secure than long passwords?
+                
+
+            
+    
+
+        
+            more hot questions
+        
+
+
+
+    
+        
+        question feed
+    
+
+        
+    
+StackExchange.ready(function(){$.get('/posts/1499889/ivc/6661');});
+default
+
+
+        
+    
+
+    
+        
+                
+
+                    
+                    
+                
+            
+            
+                    
+                        Stack Overflow
+                        
+                            Questions
+                                Jobs
+                                Developer Jobs Directory
+                                     Salary Calculator
+                                                            Help
+                                Mobile
+                        
+                    
+                    
+                        Products
+                        
+                            Teams
+                            Talent
+                            Engagement
+                            Enterprise
+                        
+                    
+                
+                    Company
+                    
+                            About
+                                                Press
+                            Work Here
+                        Legal
+                        Privacy Policy
+                            Contact Us
+                    
+                
+                
+                    
+                    
+                        Stack Exchange Network
+                        
+                            Technology
+                            Life / Arts
+                            Culture / Recreation
+                            Science
+                            Other
+
+                        
+                    
+                
+                
+                    
+        
+                Stack Overflow
+                Server Fault
+                Super User
+                Web Applications
+                Ask Ubuntu
+                Webmasters
+                Game Development
+                    
+                TeX - LaTeX
+                Software Engineering
+                Unix &amp; Linux
+                Ask Different (Apple)
+                WordPress Development
+                Geographic Information Systems
+                Electrical Engineering
+                    
+                Android Enthusiasts
+                Information Security
+                Database Administrators
+                Drupal Answers
+                SharePoint
+                User Experience
+                Mathematica
+                    
+                Salesforce
+                ExpressionEngine&#174; Answers
+                Stack Overflow em Portugu&#234;s
+                Blender
+                Network Engineering
+                Cryptography
+                Code Review
+                    
+                Magento
+                Software Recommendations
+                Signal Processing
+                Emacs
+                Raspberry Pi
+                Stack Overflow на русском
+                Programming Puzzles &amp; Code Golf
+                    
+                Stack Overflow en espa&#241;ol
+                Ethereum
+                Data Science
+                Arduino
+                Bitcoin
+                            
+                    
+                        
+                            more (31)
+                        
+                    
+                
+        
+    
+    
+        
+                Photography
+                Science Fiction &amp; Fantasy
+                Graphic Design
+                Movies &amp; TV
+                Music: Practice &amp; Theory
+                Worldbuilding
+                Seasoned Advice (cooking)
+                    
+                Home Improvement
+                Personal Finance &amp; Money
+                Academia
+                Law
+                            
+                    
+                        
+                            more (15)
+                        
+                    
+                
+        
+    
+    
+        
+                English Language &amp; Usage
+                Skeptics
+                Mi Yodeya (Judaism)
+                Travel
+                Christianity
+                English Language Learners
+                Japanese Language
+                    
+                Arqade (gaming)
+                Bicycles
+                Role-playing Games
+                Anime &amp; Manga
+                Puzzling
+                Motor Vehicle Maintenance &amp; Repair
+                            
+                    
+                        
+                            more (33)
+                        
+                    
+                
+        
+    
+    
+        
+                MathOverflow
+                Mathematics
+                Cross Validated (stats)
+                Theoretical Computer Science
+                Physics
+                Chemistry
+                Biology
+                    
+                Computer Science
+                Philosophy
+                            
+                    
+                        
+                            more (10)
+                        
+                    
+                
+        
+    
+    
+        
+                Meta Stack Exchange
+                Stack Apps
+                API
+                Data
+                Area 51
+                    
+    
+                
+            
+            
+                
+                    Blog
+                    Facebook
+                    Twitter
+                    LinkedIn
+                
+
+                
+site design / logo &#169; 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 3.0
+                            with attribution required.
+                    rev&nbsp;2019.2.22.32933
+                
+            
+        
+
+            
+            StackExchange.ready(function () { StackExchange.responsiveness.addSwitcher(); })
+    
+        Stack Overflow works best with JavaScript enabled
+            
+        
+    
+
+
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            StackExchange.ready(function () {
+
+                StackExchange.ga.init({
+                    sendTitles: true,
+                    tracker: window.ga,
+                    trackingCodes: [
+                        'UA-108242619-1'
+                    ]
+                });
+
+
+
+                    StackExchange.ga.setDimension('dimension2', '|javascript|regex|');
+
+                    StackExchange.ga.setDimension('dimension3', 'Questions/Show');
+
+
+                StackExchange.ga.trackPageView();
+            });
+            
+/**/
+            
+            var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+            (function() {
+                var ssl = 'https:' == document.location.protocol,
+                    s = document.getElementsByTagName('script')[0],
+                    qc = document.createElement('script');
+                 qc.async = true;
+                    qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                    s.parentNode.insertBefore(qc, s);
+                    _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+/**/
+                 var sc = document.createElement('script');
+                    sc.async = true;
+                    sc.src = (ssl ? 'https://sb' : 'http://b') + '.scorecardresearch.com/beacon.js';
+                    s.parentNode.insertBefore(sc, s);
+                    _comscore.push({ c1: "2", c2: "17440561" });
+            })();
+            
+
+
+            
+    
+    
